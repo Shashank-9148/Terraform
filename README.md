@@ -5,7 +5,7 @@ This project builds a pipeline to fetch sports highlights (from RapidAPI), proce
 
 It is containerized with Docker, deployed on an EC2 instance, and can be scheduled with EventBridge. Optional notifications can be sent via SNS.
 
-⚙️ Architecture
+ Architecture
 
 RapidAPI (API-Football) → Fetch highlights metadata
 
@@ -102,6 +102,7 @@ If you face urllib3 v2.0 + OpenSSL 1.0.2 issue, pin dependencies in requirements
 boto3==1.26.0
 botocore==1.29.0
 urllib3<2
+
 
 
 Use EventBridge to schedule the container periodically.
